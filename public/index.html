@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Game kuis cerdas cermat online multiplayer untuk 1 host dan 3 peserta.">
+  <title>Cerdas Cermat Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/socket.io/socket.io.js"></script>
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a href="/" id="brand-link" class="brand" aria-label="Kembali ke halaman utama">
+      <span class="brand-mark"><span>C</span><i>+</i></span>
+      <span class="brand-copy"><strong>CERDAS CERMAT</strong><small>ONLINE ARENA</small></span>
+    </a>
+    <div class="header-right">
+      <span id="connection-state" class="connection-pill"><i></i><span>Menghubungkan</span></span>
+      <button id="sound-toggle" class="icon-button" type="button" aria-label="Matikan efek suara" title="Efek suara"><span id="sound-icon">♫</span></button>
+    </div>
+  </header>
+  <main id="app" class="main-shell">
+    <div class="boot-card"><div class="spinner"></div><p>Menyiapkan arena kuis…</p></div>
+  </main>
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+  <footer class="site-footer"><span>Dirancang untuk belajar, bersaing, dan seru-seruan bareng.</span><span>1 HOST <b>·</b> 3 PESERTA <b>·</b> 50 SOAL</span></footer>
+</body>
+</html>
